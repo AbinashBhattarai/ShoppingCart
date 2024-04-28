@@ -53,7 +53,7 @@ export default function cart() {
               </button>
             </div>
             <div className='text-center font-semibold text-blue-500'>
-              {new Intl.NumberFormat("en-us", {currency: "usd", style: "currency"}).format(cartItem.price)}
+              {new Intl.NumberFormat("en-us", {currency: "usd", style: "currency"}).format(cartItem.price * (cartItem.quantity))}
             </div>
             <Button name="Remove" handleClick={() => {removeFromCart(cartItem.id)}} />
           </div>
