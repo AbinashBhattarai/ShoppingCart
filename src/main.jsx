@@ -13,7 +13,7 @@ import store from './store/store.js';
 
 const router = createHashRouter([
   {
-    path: "/",
+    path: "https://abinashbhattarai.github.io/ShoppingCart/",
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
