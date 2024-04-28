@@ -13,7 +13,7 @@ import store from './store/store.js';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/ShoppingCart",
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
