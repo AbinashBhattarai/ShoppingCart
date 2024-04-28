@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createHashRouter } from 'react-router-dom'
 import Root from "./routes/Root.jsx";
 import ErrorPage from "./error-page";
 import Home from './routes/Home.jsx'
@@ -11,7 +11,7 @@ import { Provider } from 'react-redux'
 import store from './store/store.js';
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
